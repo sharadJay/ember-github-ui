@@ -1,0 +1,7 @@
+<h1>Contributors</h1>
+{{outlet}}
+<ul>
+  {{#each content as |contributor|}}
+      <li><a href={{contributor.html_url}} target="_blank">{{contributor.login}}</a></li>
+  {{/each}}
+</ul>

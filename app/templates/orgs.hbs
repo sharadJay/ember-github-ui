@@ -1,0 +1,10 @@
+<h1>My favorite repos</h1>
+<ul>
+  {{#each content as |org|}}
+      <li>
+          <span {{ action 'itemWasFavorited' org.id}}>[favorite]</span>
+        {{#link-to "org.repos" org.id }}{{org.id}}{{/link-to}}</li>
+  {{/each}}
+
+</ul>
+{{outlet}}

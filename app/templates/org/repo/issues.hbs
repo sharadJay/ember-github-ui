@@ -1,0 +1,7 @@
+<h1>Issues</h1>
+{{outlet}}
+<ul>
+  {{#each content as |issue|}}
+      <li><a href={{issue.html_url}} target="_blank">{{issue.id}}</a></li>
+  {{/each}}
+</ul>
