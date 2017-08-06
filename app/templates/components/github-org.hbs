@@ -1,0 +1,7 @@
+{{yield}}
+<span class="favorite" {{ action 'itemFavorited'}}>
+  {{#unless isFavorited}} [favorite]{{else}}  [unfavorite]{{/unless}}
+</span>
+<span class="github-org">
+  {{#link-to "org.repos" org.id }}{{org.id}}{{/link-to}}
+</span>
