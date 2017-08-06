@@ -1,7 +1,7 @@
 {{link-to "Back to list of orgs" "orgs"}}
 <ul>
-    {{#each content as |org|}}
-    <li {{action 'saveClickedRepoName' org.id}}>{{link-to org.id "org.repo.issues" org.id }}</li>
+    {{#each content as |r|}}
+    {{github-repo repo=r}}
     {{/each}}
 </ul>
 {{outlet}}
